@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>875520</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Oggy's World</title>
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <style>
-    /* Oggy Theme Colors */
+    /* 🎨 Oggy Theme */
     body {
       background: linear-gradient(135deg, #6fd3ff, #b4f0ff);
       font-family: 'Comic Sans MS', 'Poppins', sans-serif;
@@ -57,20 +60,6 @@
       font-weight: bold;
     }
 
-    .sidebar a {
-      color: #0077b6;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .sidebar a:hover {
-      color: #ff6600;
-    }
-
-    .p_ple {
-      color: #0077b6;
-    }
-
     footer {
       background-color: #004c6d;
       padding: 20px 0;
@@ -86,15 +75,6 @@
       color: #ffcc00;
     }
 
-    footer ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    footer li {
-      margin-bottom: 5px;
-    }
-
     .social-icons i {
       font-size: 24px;
       margin-right: 10px;
@@ -107,7 +87,6 @@
       transform: scale(1.2);
     }
 
-    /* Extra Oggy Fun */
     .oggy-banner {
       background: url('image/oggy-bg.jpg') center/cover no-repeat;
       padding: 40px;
@@ -119,10 +98,16 @@
       border-top: 4px solid #00ccff;
       border-bottom: 4px solid #ffcc00;
     }
+
+    iframe {
+      width: 100%;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
 <body>
+
   <!-- Header -->
   <div class="container-fluid bgc">
     <div class="row align-items-center">
@@ -131,12 +116,12 @@
       </div>
       <div class="col-md-11">
         <h3 class="text-light title">AUDNAN SAMI SHANTO</h3>
-        <h4 class="text-light">Kandirpar, Cumilla</h4>
+        <h5 class="text-light">Kandirpar, Cumilla</h5>
       </div>
     </div>
   </div>
 
-  <!-- Fun Banner -->
+  <!-- Banner -->
   <div class="oggy-banner">
     🐱 Welcome to Oggy's World 🎉
   </div>
@@ -144,21 +129,20 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold text-warning" href="#"></a>
+      <a class="navbar-brand fw-bold text-warning" href="#">
+        <img src="logo.jpeg" width="40" class="rounded-pill me-2"> Oggy World
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-             <img src="logo.jpeg" class="img-fluid rounded-pill" width="40">
-          
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
-        <form class="d-flex">
+        <form class="d-flex ms-3">
           <input class="form-control me-2" type="text" placeholder="Search">
           <button class="btn btn-warning text-dark" type="button">Search</button>
         </form>
@@ -195,105 +179,95 @@
   </div>
 
   <!-- Main Content -->
-  <div class="container-fluid my-3">
+  <div class="container my-4">
     <div class="row">
-      <div class="col-sm-8">
-        <h4 class="text-primary fw-bold">About Oggy Theme</h4>
+      <!-- Left content -->
+      <div class="col-lg-8 mb-4">
+        <h4 class="text-primary fw-bold mb-3">About Oggy Theme</h4>
         <p>
-          Oggy and the Cockroaches is a French animated slapstick comedy series about a blue cat named Oggy whose life is constantly interrupted by three mischievous cockroaches: Joey, Marky, and Dee Dee. The show features silent comedy with no dialogue, using only unintelligible vocalizations and gestures. While Oggy is typically lazy and laid-back, he frequently chases the cockroaches when they torment him, leading to chaotic and hilarious situations.  <b style="color:#0077b6;">Oggy and the Cockroaches</b>. The design uses
-          sky blue, sunshine yellow, and ocean teal — colors that match Oggy's fun vibe!
+          <b>Oggy and the Cockroaches</b> is a hilarious French cartoon about Oggy — a lazy blue cat whose life turns upside down because of three naughty cockroaches!  
+          This theme uses sky blue, sunshine yellow, and ocean teal — colors that match Oggy's cheerful world perfectly!
         </p>
       </div>
-      <div class="col-sm-4">
+
+      <!-- Right Sidebar -->
+      <div class="col-lg-4">
         <div class="sidebar text-center">
-          <h4 class="p_ple">Character 01</h4>
-          <img src="oggy.jpeg" class="img-fluid rounded-circle" width="50%" alt="">
+          <h4>Character 01</h4>
+          <img src="oggy.jpeg" class="img-fluid rounded-circle mb-2" width="50%">
           <p><b>Oggy</b></p>
-          <a >Details</a>
-          <details style="margin-top:10px;">
-      <summary style="cursor:pointer; color:#0d6efd; font-weight:bold;">Details</summary>
-      <p style="margin-top:8px; color:#555; font-size:15px;">
-        🟦 1️⃣ Oggy
-
-🐱 Full Name: Oggy
-🎨 Color: Blue Cat
-🏠 Home: Lives in a cozy house with modern gadgets
-🧠 Personality: Calm, lazy, and loves peace
-🍗 Likes: Eating, cleaning, watching TV
-🐜 Enemies: Three mischievous cockroaches — Joey, Dee Dee, and Marky
-💬 Fun Fact: Although Oggy gets angry easily because of the cockroaches, deep down he’s kind and soft-hearted.
-      </p>
-    </details>
+          <details>
+            <summary style="cursor:pointer; color:#0d6efd; font-weight:bold;">Details</summary>
+            <p class="mt-2 text-secondary small">
+              🟦 Blue cat 🏠 Loves peace, food & TV 🍗  
+              Often fights cockroaches but is soft-hearted.
+            </p>
+          </details>
         </div>
+
         <div class="sidebar text-center">
-          <h4 class="p_ple">Character 02</h4>
-          <img src="jack.jpeg" class="img-fluid rounded-circle" width="50%" alt="">
+          <h4>Character 02</h4>
+          <img src="jack.jpeg" class="img-fluid rounded-circle mb-2" width="50%">
           <p><b>Jack</b></p>
-          <a >Details</a>
-                    <details style="margin-top:10px;">
-      <summary style="cursor:pointer; color:#0d6efd; font-weight:bold;">Details</summary>
-      <p style="margin-top:8px; color:#555; font-size:15px;">
-         2️⃣ Jack
-
-🐱 Full Name: Jack
-🎨 Color: Green Cat (Oggy’s cousin and best friend)
-💪 Personality: Short-tempered, brave, and loves to use machines or inventions
-🧰 Hobby: Making gadgets and traps to catch cockroaches
-⚡ Fun Fact: Jack often ends up destroying things while trying to help Oggy — but he’s very loyal and protective.
-      </p>
-    </details>
+          <details>
+            <summary style="cursor:pointer; color:#0d6efd; font-weight:bold;">Details</summary>
+            <p class="mt-2 text-secondary small">
+              💪 Green cat, Oggy's cousin 🔧 Builds machines ⚡  
+              Brave but short-tempered and loyal.
+            </p>
+          </details>
         </div>
+
         <div class="sidebar text-center">
-          <h4 class="p_ple">Character 03</h4>
-          <img src="olivia.jpeg" class="img-fluid rounded-circle" width="50%" alt="">
-          <p><b>OliviaJack</b></p>
-          <a >Details</a>
-                    <details style="margin-top:10px;">
-      <summary style="cursor:pointer; color:#0d6efd; font-weight:bold;">Details</summary>
-      <p style="margin-top:8px; color:#555; font-size:15px;">
-        3️⃣ Olivia
-
-🐱 Full Name: Olivia
-🎨 Color: White Cat with pink accessories
-💖 Role: Oggy’s love interest
-🌸 Personality: Sweet, caring, friendly, and kind to everyone
-🎵 Fun Fact: Olivia loves nature and animals — she often helps Oggy stay calm and happy.
-      </p>
-    </details>
+          <h4>Character 03</h4>
+          <img src="olivia.jpeg" class="img-fluid rounded-circle mb-2" width="50%">
+          <p><b>Olivia</b></p>
+          <details>
+            <summary style="cursor:pointer; color:#0d6efd; font-weight:bold;">Details</summary>
+            <p class="mt-2 text-secondary small">
+              💖 White cat 🌸 Oggy's love interest 🎵  
+              Kind, caring, loves animals and nature.
+            </p>
+          </details>
         </div>
+
+        <!-- Map -->
         <div class="sidebar">
           <h4>Google Map</h4>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2189.8231928396735!2d91.17908873881683!3d23.459348805224163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547f25ccdf55c5%3A0xe4d646aa911562e1!2sF55H%2B8MQ%2C%20Comilla!5e1!3m2!1sen!2sbd!4v1760782089496!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=Asia/Dhaka" 
-        style="border:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-<div style="text-align:center; margin-top:30px; background:#f5f7ff; padding:20px; border-radius:10px;">
-  <h3 style="color:#007bff; font-weight:bold; font-family:'Comic Sans MS', cursive; text-shadow:2px 2px 5px rgba(0,0,0,0.2);">
-    🎵 Oggy Intro Music 🎵
-  </h3>
-  <audio controls style="width:60%; border-radius:8px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.2); margin-top:10px;">
-    <source src="oggyintro song.mp3" type="audio/mpeg">
-  </audio>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325.52173378569483!2d91.1792964664651!3d23.4583069865201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547f25ccdf55c5%3A0xe4d646aa911562e1!2sF55H%2B8MQ%2C%20Comilla!5e1!3m2!1sen!2sbd!4v1760787265549!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
 
+        <!-- Calendar -->
+        <div class="sidebar">
+          <h4>Google Calendar</h4>
+          <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=Asia/Dhaka"
+            style="border:0;" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <!-- Music -->
+        <div class="sidebar text-center">
+          <h4 class="mb-3">🎵 Oggy Intro Music 🎵</h4>
+          <audio controls style="width:100%;">
+            <source src="oggyintro song.mp3" type="audio/mpeg">
+          </audio>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <div class="row text-center text-md-start">
+    <div class="container text-center text-md-start">
+      <div class="row">
         <div class="col-md-3 mb-3">
           <p>© 2025 All Rights Reserved.</p>
         </div>
         <div class="col-md-3 mb-3">
           <h5>Menu</h5>
-          <ul>
+          <ul class="list-unstyled">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-3 mb-3">
@@ -306,7 +280,6 @@
             <a href="https://www.facebook.com/Oggy.fanpage"><i class="bi bi-facebook"></i></a>
             <a href="https://www.youtube.com/@oggy"><i class="bi bi-youtube"></i></a>
             <a href="https://x.com/Viral_Oggy"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.linkedin.com/company/oggy-ai"><i class="bi bi-linkedin"></i></a>
             <a href="https://www.instagram.com/oggy_official/?hl=en"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
@@ -314,7 +287,15 @@
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const carousel = document.querySelector('#demo');
+    new bootstrap.Carousel(carousel, {
+      interval: 3000,
+      ride: 'carousel'
+    });
+  </script>
 </body>
 
 </html>
