@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>875520</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* 🌈 Nature Inspired Gradient Theme */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0b3d0b, #1a5f7a, #0d1b2a);
+      color: #f5f5f5;
+    }
+
+    .bgc {
+      background: linear-gradient(90deg, #005f73, #0a9396, #94d2bd);
+      padding: 10px 0;
+      border-bottom: 4px solid #ffd166;
+      color: #fff;
+    }
+
+    .title {
+      font-weight: bold;
+      color: #ffd166;
+      text-shadow: 2px 2px 6px rgba(255, 209, 102, 0.5);
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #023047, #03506f, #057a78) !important;
+      position: sticky !important;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #ffd166;
+    }
+
+    .navbar a.nav-link {
+      color: #ffd166 !important;
+      font-weight: 600;
+    }
+
+    .navbar a.nav-link:hover {
+      color: #fff !important;
+      text-shadow: 0 0 10px #ffd166;
+    }
+
+    /* Form section */
+    .form-container {
+      background: linear-gradient(145deg, #014f86, #0a9396, #94d2bd);
+      border: 2px solid #ffd166;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(255, 209, 102, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffd166;
+      text-shadow: 0 0 10px rgba(255, 209, 102, 0.7);
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    label {
+      font-weight: 600;
+      color: #ffd166;
+    }
+
+    input,
+    select,
+    textarea {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      width: 100%;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #ffd166;
+      box-shadow: 0 0 10px rgba(255, 209, 102, 0.6);
+    }
+
+    button {
+      background: linear-gradient(90deg, #ffd166, #ffb703);
+      border: none;
+      color: #023047;
+      font-weight: 700;
+      padding: 12px 0;
+      border-radius: 8px;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ffb703;
+      box-shadow: 0 0 10px #ffd166;
+      color: #000;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: linear-gradient(145deg, #013a63, #014f86);
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(255, 209, 102, 0.25);
+      color: #f0f0f0;
+    }
+
+    .sidebar h4 {
+      color: #ffd166;
+      font-weight: bold;
+    }
+
+    .iframe-box {
+      background: linear-gradient(145deg, #013a63, #0a9396);
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #ffd166;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+
+    .iframe-box iframe {
+      width: 100%;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .audio-box {
+      text-align: center;
+      margin-top: 30px;
+      background: linear-gradient(145deg, #014f86, #0a9396);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+    }
+
+    .audio-box h3 {
+      color: #ffd166;
+      font-weight: bold;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #001219, #005f73);
+      padding: 30px 0;
+      color: #ffd166;
+      border-top: 2px solid #ffd166;
+      margin-top: 40px;
+    }
+
+    /* Navbar search adjustments */
+    .navbar .form-control {
+      width: 200px;
+      height: 38px;
+      font-size: 0.9rem;
+      padding: 5px 10px;
+    }
+
+    .navbar .btn {
+      height: 38px;
+      font-size: 0.9rem;
+      padding: 5px 15px;
+    }
+
+    @media (max-width: 576px) {
+      .navbar .form-control {
+        width: 100px;
+      }
+      .navbar .btn {
+        padding: 5px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="container-fluid bgc">
+    <div class="row align-items-center">
+      <div class="col-md-1 text-center">
+        <img src="logo.jpeg" class="img-fluid rounded-pill" width="70" alt="">
+      </div>
+      <div class="col-md-11">
+        <h3 class="title">AUDNAN SAMI SHANTO</h3>
+        <h4 class="text-light">875520</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-warning" href="#">
+        <img src="logo.jpeg" class="img-fluid rounded-pill" width="40" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="job4.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact..html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-warning" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <!-- Left Form Section -->
+      <div class="col-lg-8 px-4">
+        <div class="form-container">
+          <h2><i class="bi bi-person-circle"></i> User Information</h2>
+
+          <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select your gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+
+            <div class="text-center mt-4">
+              <button type="submit"><i class="bi bi-send-fill"></i> Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-lg-4 px-4">
+        <div class="sidebar text-center">
+          <h4>Prime Minister</h4>
+          <img src="dryunus.jpg" class="img-fluid rounded-3" width="60%" alt="">
+          <p><b>Dr. Yunus</b></p>
+        </div>
+
+        <div class="sidebar text-center">
+          <h4>Owner</h4>
+          <img src="mypic.jpg" class="img-fluid rounded-3" width="60%" alt="">
+          <p><b>Audnan Sami Shanto</b></p>
+        </div>
+
+        <div class="sidebar">
+          <h4>Google Map</h4>
+          <div class="iframe-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2604.1402522916487!2d91.17974102557291!3d23.460011390274236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1760961387640!5m2!1sen!2sbd"
+              height="300" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <h4>Calendar</h4>
+          <div class="iframe-box">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=en.bd%23holiday%40group.v.calendar.google.com&ctz=Asia%2FDhaka"
+              height="300"></iframe>
+          </div>
+        </div>
+
+        <div class="audio-box mb-5">
+          <h3>🎵 National Anthem 🎵</h3>
+          <audio controls style="width:80%;">
+            <source src="anthem.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 mb-3">
+          <p>© 2025 All Rights Reserved.</p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Menu</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Address</h5>
+          <p>Kandirpar, Cumilla</p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Oggy.fanpage"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/@oggy"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com/Viral_Oggy"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/company/oggy-ai"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/oggy_official/?hl=en"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
